@@ -33,6 +33,22 @@ Bem-vindo à API de Informações Meteorológicas e Notícias! Esta API foi dese
 ## Exemplos de Uso
 
 ### 1. Obter Informações sobre Aeroportos (Brasil)
-
 ```http
 GET /info-aeroportos/brasil
+```
+
+### 2. Obter Informações Meteorológicas para um Aeroporto (SBBH)
+```http
+GET /info-meteorologica/SBBH
+```
+
+### 3. Pesquisar Notícias (Exemplo com Estado, Palavra-chave e Data)
+```http
+GET /pesquisa?state=minas gerais&key_word=clima&data=2023-01-01
+```
+
+## Observações
+Certifique-se de fornecer os parâmetros necessários nas rotas que os exigem.
+As informações meteorológicas são obtidas da API da Rede Integrada de Meteorologia (REDEMET).
+As notícias são recuperadas da API da NewsAPI.
+As informações de voos em tempo real são obtidas da API da AviationStack.
